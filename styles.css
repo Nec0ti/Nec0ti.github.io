@@ -34,3 +34,176 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
+#contact {
+    background-color: #333; /* Arka plan rengi */
+    color: #fff; /* Metin rengi */
+    padding: 40px;
+    margin: 10px;
+}
+
+#contact h2 {
+    font-size: 24px; /* Başlık boyutu */
+    margin-bottom: 20px; /* Başlık alt boşluğu */
+    text-align: center;
+}
+
+#contact p {
+    font-size: 16px; /* Paragraf boyutu */
+    margin-bottom: 20px; /* Paragraf alt boşluğu */
+}
+
+#contact ul {
+    list-style: none; /* Liste işaretlerini kaldır */
+    padding: 0; /* Liste iç boşluğu */
+}
+
+#contact li {
+    font-size: 16px; /* Liste elemanı boyutu */
+    margin-bottom: 10px; /* Liste elemanı alt boşluğu */
+}
+
+#contact li:before {
+    content: "\2022"; /* Liste elemanı işareti (nokta) */
+    color: #fff; /* Liste elemanı işareti rengi */
+    font-size: 12px; /* Liste elemanı işareti boyutu */
+    margin-right: 5px; /* Liste elemanı işareti sağ boşluğu */
+}
+
+
+
+
+
+
+
+
+#about {
+    background-color: #333; /* Arka plan rengi */
+    color: #fff; /* Metin rengi */
+    padding: 40px; /* Kenar boşlukları */
+    margin: 10px;
+}
+
+#about h2 {
+    font-size: 24px; /* Başlık boyutu */
+    margin-bottom: 20px; /* Başlık alt boşluğu */
+    text-align: center;
+}
+
+#about p {
+    font-size: 16px; /* Paragraf boyutu */
+    margin-bottom: 20px; /* Paragraf alt boşluğu */
+}
+
+#about ul {
+    list-style: none; /* Liste işaretlerini kaldır */
+    padding: 0; /* Liste iç boşluğu */
+}
+
+#about li {
+    font-size: 16px; /* Liste elemanı boyutu */
+    margin-bottom: 10px; /* Liste elemanı alt boşluğu */
+}
+
+#about li:before {
+    content: "\2022"; /* Liste elemanı işareti (nokta) */
+    color: #fff; /* Liste elemanı işareti rengi */
+    font-size: 12px; /* Liste elemanı işareti boyutu */
+    margin-right: 5px; /* Liste elemanı işareti sağ boşluğu */
+}
+
+
+
+
+
+
+#articles {
+    background-color: #333; /* Arka plan rengi */
+    color: #fff; /* Metin rengi */
+    padding: 40px; /* Kenar boşlukları */
+    margin: 10px;
+}
+
+#articles h2 {
+    font-size: 32px; /* Başlık boyutu */
+    margin-bottom: 20px; /* Başlık alt boşluğu */
+    text-align: center;
+}
+
+#articles h3 {
+    font-size: 20px; /* Alt baslık boyutu */
+    margin-bottom: 10px; /* Alt baslık alt boşluğu */
+}
+
+#articles p {
+    font-size: 16px; /* Paragraf boyutu */
+    margin-bottom: 20px; /* Paragraf alt boşluğu */
+}
+
+#articles ul {
+    list-style: none; /* Liste işaretlerini kaldır */
+    padding: 0; /* Liste iç boşluğu */
+}
+
+#articles li {
+    font-size: 16px; /* Liste elemanı boyutu */
+    margin-bottom: 10px; /* Liste elemanı alt boşluğu */
+}
+
+#articles li:before {
+    content: "\2022"; /* Liste elemanı işareti (nokta) */
+    color: #fff; /* Liste elemanı işareti rengi */
+    font-size: 12px; /* Liste elemanı işareti boyutu */
+    margin-top: 5px; /* Liste elemanı işareti sağ boşluğu */
+}
+
+#articles button {
+    background-color: #414141; /* Arka plan rengi */
+    color: #ffffff; /* Metin rengi */ 
+    padding: 10px 20px; /* Kenar boşlukları */
+    font-size: 16px; /* Metin boyutu */
+    cursor: pointer; /* Fareyle tıklandıgında fareye tıklama efektini ver */
+}
+
+
+
+
+
+
+
+
+
+#home {
+    background-color: #333; /* Arka plan rengi */
+    color: #fff; /* Metin rengi */
+    padding: 40px; /* Kenar boşlukları */
+    margin: 10px;
+}
+
+#home h2 {
+    font-size: 24px; /* Başlık boyutu */
+    margin-bottom: 20px; /* Başlık alt boşluğu */
+    text-align: center;
+}
+
+#home p {
+    font-size: 16px; /* Paragraf boyutu */
+    margin-bottom: 20px; /* Paragraf alt boşluğu */
+}
+
+#home ul {
+    list-style: none; /* Liste işaretlerini kaldır */
+    padding: 0; /* Liste iç boşluğu */
+}
+
+#home li {
+    font-size: 16px; /* Liste elemanı boyutu */
+    margin-bottom: 10px; /* Liste elemanı alt boşluğu */
+}
+
+#home li:before {
+    content: "\2022"; /* Liste elemanı işareti (nokta) */
+    color: #fff; /* Liste elemanı işareti rengi */
+    font-size: 12px; /* Liste elemanı işareti boyutu */
+    margin-right: 5px; /* Liste elemanı işareti sağ boşluğu */
+}
