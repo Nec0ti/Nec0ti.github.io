@@ -18,7 +18,7 @@
 </head>
 <body>
     <div class="cookie-notification" id="cookieNotification">
-        <p>This site uses cookies to improve user experience. <button onclick="acceptCookies()">Accept</button></p>
+        <p>This site uses cookies to improve user experience. <button onclick="acceptCookies(), allConsentGranted()">Accept</button></p>
     </div>
 
     <div class="container">
@@ -94,5 +94,15 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script>
+        function allConsentGranted() {
+            gtag('consent', 'update', {
+                'ad_user_data': 'granted',
+                'ad_personalization': 'granted',
+                'ad_storage': 'granted',
+                'analytics_storage': 'granted'
+            });
+        }
+    </script>
 </body>
 </html>
