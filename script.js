@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Kişisel portfolyo sitesi yüklendi.');
+    console.log('Loaded');
 
     const links = document.querySelectorAll('.sidebar ul li a');
 

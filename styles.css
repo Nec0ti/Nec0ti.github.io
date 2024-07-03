@@ -91,6 +91,7 @@ section {
 
 #about {
     background-image: url('https://images.wallpaperscraft.com/image/single/beautiful_scenery_mountains_lake_93318_800x600.jpg');
+    color: wheat;
 }
 
 #contact {
@@ -133,4 +134,30 @@ form button:hover {
 
 body::-webkit-scrollbar {
     display: none;
+}
+
+a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1a76d2;
+}
+
+
+.project button {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    width: 100px;
+    height: 30px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    border: none;
+}
+
+.project button:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
