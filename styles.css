@@ -1,209 +1,136 @@
 body {
-    background-color: #1e1e1e;
-    color: #fff;
-    font-family: Arial, sans-serif;
-}
-
-header {
-    background-color: #111;
-    padding: 20px;
-    text-align: center;
-}
-
-header h1 {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
-}
-
-nav ul {
-    list-style-type: none;
     padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+.container {
+    display: flex;
+    width: 100%;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
+.sidebar {
+    background-color: #1f1f1f;
+    padding: 2rem;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-footer {
-    background-color: #111;
-    padding: 10px;
+.sidebar h1 {
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar ul li {
+    margin: 1rem 0;
     text-align: center;
+}
+
+.sidebar ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #05932e;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar ul li a img {
+    width: 50%;
+    height: 50%;
+}
+
+.sidebar ul li a:hover {
+    background-color: #9a0000;
+    color: #1f1f1f;
+}
+
+.content {
+    flex: 1;
+    overflow-y: auto;
+}
+
+section {
+    padding: 3rem 2rem;
+    margin: 2rem;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    position: relative;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.parallax-inner {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+#about {
+    background-image: url('https://images.wallpaperscraft.com/image/single/beautiful_scenery_mountains_lake_93318_800x600.jpg');
 }
 
 #contact {
-    background-color: #333; /* Arka plan rengi */
-    color: #fff; /* Metin rengi */
-    padding: 40px;
-    margin: 10px;
+    background-image: url('https://images.wallpaperscraft.com/image/single/beautiful_scenery_mountains_lake_93318_800x600.jpg');
 }
 
-#contact h2 {
-    font-size: 24px; /* Başlık boyutu */
-    margin-bottom: 20px; /* Başlık alt boşluğu */
-    text-align: center;
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-#contact p {
-    font-size: 16px; /* Paragraf boyutu */
-    margin-bottom: 20px; /* Paragraf alt boşluğu */
+form label {
+    margin-top: 1rem;
 }
 
-#contact ul {
-    list-style: none; /* Liste işaretlerini kaldır */
-    padding: 0; /* Liste iç boşluğu */
+form input, form textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: #3a3a3a;
+    color: #ffffff;
 }
 
-#contact li {
-    font-size: 16px; /* Liste elemanı boyutu */
-    margin-bottom: 10px; /* Liste elemanı alt boşluğu */
+form button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #1f1f1f;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-#contact li:before {
-    content: "\2022"; /* Liste elemanı işareti (nokta) */
-    color: #fff; /* Liste elemanı işareti rengi */
-    font-size: 12px; /* Liste elemanı işareti boyutu */
-    margin-right: 5px; /* Liste elemanı işareti sağ boşluğu */
+form button:hover {
+    background-color: #1f1f1f;
+    color: #ffffff;
 }
 
-
-
-
-
-
-
-
-#about {
-    background-color: #333; /* Arka plan rengi */
-    color: #fff; /* Metin rengi */
-    padding: 40px; /* Kenar boşlukları */
-    margin: 10px;
-}
-
-#about h2 {
-    font-size: 24px; /* Başlık boyutu */
-    margin-bottom: 20px; /* Başlık alt boşluğu */
-    text-align: center;
-}
-
-#about p {
-    font-size: 16px; /* Paragraf boyutu */
-    margin-bottom: 20px; /* Paragraf alt boşluğu */
-}
-
-#about ul {
-    list-style: none; /* Liste işaretlerini kaldır */
-    padding: 0; /* Liste iç boşluğu */
-}
-
-#about li {
-    font-size: 16px; /* Liste elemanı boyutu */
-    margin-bottom: 10px; /* Liste elemanı alt boşluğu */
-}
-
-#about li:before {
-    content: "\2022"; /* Liste elemanı işareti (nokta) */
-    color: #fff; /* Liste elemanı işareti rengi */
-    font-size: 12px; /* Liste elemanı işareti boyutu */
-    margin-right: 5px; /* Liste elemanı işareti sağ boşluğu */
-}
-
-
-
-
-
-
-#articles {
-    background-color: #333; /* Arka plan rengi */
-    color: #fff; /* Metin rengi */
-    padding: 40px; /* Kenar boşlukları */
-    margin: 10px;
-}
-
-#articles h2 {
-    font-size: 32px; /* Başlık boyutu */
-    margin-bottom: 20px; /* Başlık alt boşluğu */
-    text-align: center;
-}
-
-#articles h3 {
-    font-size: 20px; /* Alt baslık boyutu */
-    margin-bottom: 10px; /* Alt baslık alt boşluğu */
-}
-
-#articles p {
-    font-size: 16px; /* Paragraf boyutu */
-    margin-bottom: 20px; /* Paragraf alt boşluğu */
-}
-
-#articles ul {
-    list-style: none; /* Liste işaretlerini kaldır */
-    padding: 0; /* Liste iç boşluğu */
-}
-
-#articles li {
-    font-size: 16px; /* Liste elemanı boyutu */
-    margin-bottom: 10px; /* Liste elemanı alt boşluğu */
-}
-
-#articles li:before {
-    content: "\2022"; /* Liste elemanı işareti (nokta) */
-    color: #fff; /* Liste elemanı işareti rengi */
-    font-size: 12px; /* Liste elemanı işareti boyutu */
-    margin-top: 5px; /* Liste elemanı işareti sağ boşluğu */
-}
-
-#articles button {
-    background-color: #414141; /* Arka plan rengi */
-    color: #ffffff; /* Metin rengi */ 
-    padding: 10px 20px; /* Kenar boşlukları */
-    font-size: 16px; /* Metin boyutu */
-    cursor: pointer; /* Fareyle tıklandıgında fareye tıklama efektini ver */
-}
-
-
-
-
-
-
-
-
-
-#home {
-    background-color: #333; /* Arka plan rengi */
-    color: #fff; /* Metin rengi */
-    padding: 40px; /* Kenar boşlukları */
-    margin: 10px;
-}
-
-#home h2 {
-    font-size: 24px; /* Başlık boyutu */
-    margin-bottom: 20px; /* Başlık alt boşluğu */
-    text-align: center;
-}
-
-#home p {
-    font-size: 16px; /* Paragraf boyutu */
-    margin-bottom: 20px; /* Paragraf alt boşluğu */
-}
-
-#home ul {
-    list-style: none; /* Liste işaretlerini kaldır */
-    padding: 0; /* Liste iç boşluğu */
-}
-
-#home li {
-    font-size: 16px; /* Liste elemanı boyutu */
-    margin-bottom: 10px; /* Liste elemanı alt boşluğu */
-}
-
-#home li:before {
-    content: "\2022"; /* Liste elemanı işareti (nokta) */
-    color: #fff; /* Liste elemanı işareti rengi */
-    font-size: 12px; /* Liste elemanı işareti boyutu */
-    margin-right: 5px; /* Liste elemanı işareti sağ boşluğu */
+body::-webkit-scrollbar {
+    display: none;
 }

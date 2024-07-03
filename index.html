@@ -1,62 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Necoti</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Necoti</h1>
-        <nav>
+    <div class="container">
+        <nav class="sidebar">
+            <h1>Necoti</h1>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#articles">Blogs</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about"><img src="sources/about.png" alt="About Me"></a></li>
+                <li><a href="#projects"><img src="sources/projects.png" alt="Projects"></a></li>
+                <li><a href="#contact"><img src="sources/contact.png" alt="Contact Me"></a></li>
             </ul>
         </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h2>Welcome to Necoti</h2>
-            <p>Welcome to my blog. I'm Necoti. I'm a game developer. Feel free to read my blogs and share it with others.</p>
-        </section>
 
+        <div class="content">
+            <section id="about" class="parallax">
+                <div class="parallax-inner">
+                    <h2>About Me</h2>
+                    <p>I'm solo game developer and except that one sometimes i developing open source projects with pyton.</p>
+                </div>
+            </section>
 
-        <section id="articles">
-            <h2>Blogs</h2>
-            <article>
-                <h3>How to make a game with unity</h3>
-                <p>I explain how to make a game with c# and unity engine. You can read full blog by clicking the button below</p>
-                <button onclick="ReadMore()">Read more</button>
-            </article>
-        </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3>Fatrocu</h3>
+                    <p>it can conver e-invoce files to excel format</p>
+                </div>
+            </section>
 
-
-        <section id="about">
-            <h2>About</h2>
-            <p>About me:</p>
-            <p>Hello, I'm a game developer. I make indie games and i have a small team. I have been in this sector for 2 years. if you want to join my team or hire me, please contact me in contact section.</p>
-        </section>
-
-
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>This is the contact informations of Necoti.</p>
-            <ul>
-                <li>E-Mail: halilnecatig2@gmail.com</li>
-                <li>Twitter: @Nec0ti</li>
-                <li>GitHub: Nec0ti</li>
-                <li>Discord: nec0ti</li>
-            </ul>
-        </section>
-
-    </main>
-    <footer>
-        <p>&copy; 2024 Necoti Blog. All rights reserved.</p>
-    </footer>
+            <section id="contact" class="parallax">
+                <div class="parallax-inner">
+                    <h2>Contact Me</h2>
+                    <form>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <button type="submit">Sumbit</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
