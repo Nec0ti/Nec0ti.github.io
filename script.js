@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function acceptCookies() {
     setCookie('cookieAccepted', 'true', 365);
+    allConsentGranted();
 
     document.getElementById('cookieNotification').style.display = 'none';
 }
@@ -46,3 +47,12 @@ window.onload = function() {
         document.getElementById('cookieNotification').style.display = 'block';
     }
 };
+
+function allConsentGranted() {
+  gtag('consent', 'update', {
+    'ad_user_data': 'granted',
+    'ad_personalization': 'granted',
+    'ad_storage': 'granted',
+    'analytics_storage': 'granted'
+  });
+}
