@@ -12,3 +12,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+function acceptCookies() {
+    document.getElementById('cookieNotification').style.display = 'none';
+}
+
+window.onload = function() {
+    document.getElementById('cookieNotification').style.display = 'block';
+};
