@@ -4,111 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Necoti</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q1LFSFXJV1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-Q1LFSFXJV1');
-    </script>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="cookie-notification" id="cookieNotification">
-        <p>This site uses cookies to improve user experience. <button onclick="acceptCookies(), allConsentGranted()">Accept</button></p>
-    </div>
-
     <div class="container">
-        <nav class="sidebar">
-            <h1>Necoti</h1>
+        <nav>
+            <h2>Necoti</h2>
             <ul>
-                <li><a href="#about"><img src="sources/about.png" alt="About Me"></a></li>
-                <li><a href="#projects"><img src="sources/projects.png" alt="Projects"></a></li>
-                <li><a href="#contact"><img src="sources/contact.png" alt="Contact Me"></a></li>
+                <li><a href="https://canoti.xyz/">Blog</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
         </nav>
 
-        <div class="content">
-            <section id="about" class="parallax">
-                <div class="parallax-inner">
-                    <h2>About Me</h2>
-                    <p>
-                        Hello! I'm Necoti, an unprofessional game developer who enjoys creating games using Unity. 
-                        Besides that, I develop open-source projects with Python. If you would like to check out my projects, 
-                        you can visit the Projects section. You can also visit my <a href="https://necoti.itch.io">itch.io</a> page for more of my work.
-                    </p>
-                    <p>
-                        In my free time, I keep up with technological advancements and continuously strive to improve myself 
-                        by attending online game jams.
-                    </p>
-                    <p>
-                        In the future, I aim to participate in larger and more innovative projects and establish my own software 
-                        company to make a significant impact in the industry. My passion and determination in my work drive me to 
-                        always strive for the best.
-                    </p>
-                    <p>
-                        Feel free to reach out to me for more information through the <a href="#contact">contact</a> section. Thank you!
-                    </p>
-                    <p>
-                        Maybe you might want to support me?
-                    </p>
-                    <p>
-                        <a href="https://www.buymeacoffee.com/necotidev"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=necotidev&button_colour=383838&font_colour=ffffff&font_family=Bree&outline_colour=ffffff&coffee_colour=FFDD00" /></a>
-                    </p>
-                </div>
-            </section>
-                     
-
-            <section id="projects">
-                <h2>Projects</h2>
-                <div class="project">
-                    <hr>
-                    <h3>Fatrocu</h3>
-                    <p>it can conver e-invoce files to excel format</p>
-                    <button onclick="window.location.href='https://github.com/Nec0ti/Fatrocu'" id="fatrocu">View</button>
-                    <hr>
-                </div>
-                <div class="project">
-                    <h3>Emotion-based UI Enhancement</h3>
-                    <p>This project is a web application that dynamically adjusts the background color and content of the webpage based on the user's facial expressions.</p>
-                    <button onclick="window.location.href='https://github.com/Nec0ti/Emotion-based-UI-Enhancement'" id="fatrocu">View</button>
-                    <hr>
-                </div>
-            </section>
-
-            <section id="contact" class="parallax">
-                <div class="parallax-inner">
-                    <h2>Contact</h2>
-                    <form
-                        action="https://formspree.io/f/xpwazrlq"
-                        method="POST"
-                    >
-                        <label for="Name">Name:</label>
-                        <input type="text" id="Name" name="Name" required>
-                        <label for="Email">Your e-mail:</label>
-                        <input type="email" id="Email" name="Email" required>
-                        <label for="Message">Your message:</label>
-                        <textarea id="Message" name="Message" required></textarea>
-                        <button type="Submit">Send</button>
-                    </form>
-                </div>
-            </section>
-                       
-        </div>
+        <section class="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I’m Necoti, a 15-year-old tech enthusiast from Türkiye. I’m passionate about programming, game development, and exploring new technologies. </p>
+        <a href="mailto:halilnecatig2@gmail.com" class="cta-button">✉️ Send Email</a>
+        </section>
     </div>
+
     <script src="script.js"></script>
-    <script>
-        function allConsentGranted() {
-            gtag('consent', 'update', {
-                'ad_user_data': 'granted',
-                'ad_personalization': 'granted',
-                'ad_storage': 'granted',
-                'analytics_storage': 'granted'
-            });
-        }
-    </script>
 </body>
 </html>
